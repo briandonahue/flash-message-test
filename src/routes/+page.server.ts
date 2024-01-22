@@ -17,6 +17,6 @@ export const actions: Actions = {
       if (!form.valid) {
         fail(400, { form })
       }
-      redirect(303, '/login', { status: 'create', message: 'Account created. Please login.' }, event)
+      throw redirect(303, '/login', { status: 'create', message: 'Account created. Please login.' }, event)
     }
   }
