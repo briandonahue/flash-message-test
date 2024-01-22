@@ -16,4 +16,4 @@
   $: console.log($flash)
 </script>
 
-<div>{$flash?.type} {$flash?.message}</div>
+<div>{$flash?.status} {$flash?.message}</div>
